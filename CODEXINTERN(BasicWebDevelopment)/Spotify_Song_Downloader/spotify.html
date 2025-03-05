@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Song Downloader</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://logosmarcas.net/wp-content/uploads/2020/09/Spotify-Emblema.png" 
+                 alt="Spotify Logo" class="spotify-logo"> 
+            <h2>Spotify Song Downloader</h2>
+        </div>
+
+        <input type="text" id="songUrl" placeholder="Enter Spotify Song URL">
+        <button onclick="downloadSpotifySong()">Download</button>
+
+        <div id="result">
+            <h3 id="songTitle"></h3>
+            <img id="songThumbnail" class="song-image" style="display:none;">
+            <a id="downloadLink" style="display:none;" download>Download Song</a>
+        </div>
+    </div>
+
+    <script src="spotify.js"></script>
+</body>
+</html>
